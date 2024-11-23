@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { OrdersComponent } from "@angular-monorepo/orders";
 
 @Component({
   selector: 'lib-products',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
-export class ProductsComponent {}
+export class ProductsComponent {
+  private a = OrdersComponent;
+}
